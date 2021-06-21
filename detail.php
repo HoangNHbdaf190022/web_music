@@ -16,7 +16,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">WEB</a>
+    <a class="navbar-brand" href="index.php"><strong>ATN</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,10 +26,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home Page</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/h18620010">Contact For Us</a>
+          <a class="nav-link active" href="https://www.facebook.com/h18620010">Contact For Us</a>
         </li>
         <?php if(isset($_SESSION['admin'])){echo("<li class='nav-item'>
-          <a class='nav-link' href='qlsong.php' tabindex='-1'>Manage songs</a>
+          <a class='nav-link active' href='qlsong.php' tabindex='-1'>Manage songs</a>
         </li>");} ?>
 
         <?php  if(isset($_SESSION['admin']) or isset($_SESSION['user'])){echo("<li class='nav-item'>
@@ -79,7 +79,7 @@
 
   <script type="text/javascript">
     function myAudio(event) {
-      if (event.currentTime > 60) {
+      if (event.currentTime > 90) {
         event.currentTime = 0;
         event.pause();
         alert("Buy To continue listening")

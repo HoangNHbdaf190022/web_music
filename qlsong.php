@@ -10,7 +10,7 @@
     <title>QL SOng</title>
 </head>
 <?php session_start(); ?>
-<body class="bg-secondary">
+<body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">WEB</a>
